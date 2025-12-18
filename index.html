@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Alya Sofea</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i data-lucide="user-circle"></i> Alya Sofea</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container home-grid">
+            <div>
+                <span class="badge">Welcome to my portfolio</span>
+                <h1 class="hero-title">Hi, I'm <span style="color: var(--color-brown);">Alya</span></h1>
+                <h2 style="font-size: 2rem; color: var(--color-green); margin-bottom: 20px;">IT Student & Developer</h2>
+                <p style="font-size: 1.2rem; color: var(--color-text-muted); margin-bottom: 30px;">
+                    I love exploring new things and solving complex problems. My main interests are web development, UI/UX design, and database systems
+                </p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="projects.html" class="btn btn-primary">View My Work <i data-lucide="arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div>
+               <img src="profile.jpg" alt="Alya Sofea" class="hero-img">
+
+               <img src="profile.png" alt="Alya Sofea" class="hero-img">
+            </div>
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Alya Sofea</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Local style to make contact items look neat */
+        .contact-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        .contact-row a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            transition: opacity 0.3s;
+        }
+        .contact-row a:hover {
+            opacity: 0.8;
+            border-bottom-color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i data-lucide="user-circle"></i> Alya Sofea</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Let's Connect</span>
+                <h2 class="title">Get In Touch</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3 style="margin-bottom: 30px; font-size: 1.5rem;">Contact Information</h3>
+                    
+                    <div class="contact-row">
+                        <i data-lucide="mail"></i> 
+                        <span>sofea1782@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-row">
+                        <i data-lucide="phone"></i> 
+                        <span>+60 11-10632205</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i data-lucide="map-pin"></i> 
+                        <span>Melaka, Malaysia</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <i data-lucide="github"></i> 
+                        <a href="https://github.com/AlyaSofea" target="_blank">github.com/AlyaSofea</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Message sent (demo)!');">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        
+                        <label>Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Alya Sofea</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Styling for the GitHub Button */
+        .github-btn {
+            display: flex;
+            width: fit-content;
+            margin: 20px auto 0 auto;
+            align-items: center;
+            gap: 10px;
+            background-color: #24292e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .github-btn:hover {
+            background-color: #000;
+            transform: translateY(-2px);
+            color: white; 
+        }
+
+        .github-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i data-lucide="user-circle"></i> Alya Sofea</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">My Work</span>
+                <h2 class="title">Featured Projects</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <img src="laundry.png" alt="LaundryGo System Interface" class="project-img">
+                    
+                    <div class="project-info">
+                        <h3>LaundryGo: Smart Laundry System</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-top: 10px; margin-bottom: 15px;">
+                            Designed to modernize laundry services, LaundryGo eliminates the need for physical visits by allowing users to schedule pickup and delivery online. It consists of two Java-based desktop applications (for customers and staff) connected to a PHP backend and MySQL database.
+                        </p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">
+                            This centralized system enhances operational efficiency, solves manual tracking issues, and provides real-time transparency for service progress.
+                        </p>
+                        <div style="margin-bottom: 15px;">
+                            <span class="tag">Java</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+                        </div>
+                        
+                        <a href="https://github.com/hnnrina/laundry-system-project" target="_blank" class="github-btn">
+                            <i data-lucide="github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="inventory.png" alt="Sony Inventory System Dashboard" class="project-img">
+                    
+                    <div class="project-info">
+                        <h3>Sony Inventory System</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-top: 10px; margin-bottom: 15px;">
+                            Developed using <strong>C++</strong> to streamline operations for large-scale businesses like Sony, this system addresses inefficiencies such as stock shortages and manual reporting errors. It offers comprehensive modules for managing products, stocks, sales, and purchases.
+                        </p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">
+                            Key features include automated complex calculations for monthly sales, CRUD database management, and a robust report generator for analyzing purchase trends and profit margins.
+                        </p>
+                        <span class="tag">C++</span><span class="tag">Database</span><span class="tag">Management</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="kirby_1.jpeg" alt="Kirby Animation Scene" class="project-img">
+                    
+                    <div class="project-info">
+                        <h3>Multimedia System - Kirby Animation</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-top: 10px; margin-bottom: 15px;">
+                            An interactive multimedia project created with <strong>Adobe Animate</strong> that explores the rich history of the Kirby franchise. Through engaging animation, this project narrates the evolution of the game, introduces its founders, and showcases the development of iconic characters.
+                        </p>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">
+                            It serves as an educational and entertaining deep-dive into the lore behind the game, demonstrating skills in digital storytelling and multimedia design.
+                        </p>
+                        <span class="tag">Adobe Animate</span><span class="tag">Multimedia</span><span class="tag">Storytelling</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
